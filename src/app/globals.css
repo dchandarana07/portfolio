@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * FORCE LIGHT MODE ONLY - COMPLETE OVERRIDE
+ * This completely disables Tailwind's automatic dark mode
+ */
+
+/* Base layer - Force light mode at the highest priority */
+@layer base {
+  /* Force light color scheme on everything */
+  *, *::before, *::after {
+    color-scheme: light only !important;
+  }
+
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --card: #ffffff;
+    --card-foreground: #0a0a0a;
+    --primary: #2563eb;
+    --primary-foreground: #ffffff;
+    --secondary: #f4f4f5;
+    --secondary-foreground: #18181b;
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+    --accent: #f4f4f5;
+    --accent-foreground: #18181b;
+    --border: #e4e4e7;
+    --ring: #2563eb;
+    color-scheme: light only;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #ffffff !important;
+    color-scheme: light only !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #0a0a0a !important;
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
 }
 
+/* Theme configuration */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+  --color-primary: #2563eb;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #18181b;
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #18181b;
+  --color-border: #e4e4e7;
+  --color-ring: #2563eb;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* Force all colors to light mode when system prefers dark */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light only !important;
+    --background: #ffffff !important;
+    --foreground: #0a0a0a !important;
+    --card: #ffffff !important;
+    --card-foreground: #0a0a0a !important;
+  }
+
+  html, body {
+    background-color: #ffffff !important;
+    color: #0a0a0a !important;
+    color-scheme: light only !important;
+  }
+
+  /* Override Tailwind's automatic dark mode colors */
+  .bg-white { background-color: #ffffff !important; }
+  .bg-gray-50 { background-color: #f9fafb !important; }
+  .bg-gray-100 { background-color: #f3f4f6 !important; }
+  .bg-gray-200 { background-color: #e5e7eb !important; }
+  .bg-gray-900 { background-color: #ffffff !important; }
+  .bg-gray-800 { background-color: #f9fafb !important; }
+  .bg-gray-700 { background-color: #f3f4f6 !important; }
+
+  .text-gray-900 { color: #111827 !important; }
+  .text-gray-800 { color: #1f2937 !important; }
+  .text-gray-700 { color: #374151 !important; }
+  .text-gray-600 { color: #4b5563 !important; }
+  .text-gray-500 { color: #6b7280 !important; }
+  .text-gray-400 { color: #9ca3af !important; }
+  .text-white { color: #111827 !important; }
+
+  .border-gray-200 { border-color: #e5e7eb !important; }
+  .border-gray-300 { border-color: #d1d5db !important; }
+  .border-gray-700 { border-color: #e5e7eb !important; }
+
+  /* Prevent any dark mode inversions */
+  [class*="dark:"] {
+    all: unset;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  border-color: #e4e4e7;
+}
+
+::selection {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* Custom scrollbar - light theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1aa;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
 }
