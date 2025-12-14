@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllProjectSlugs } from '@/data/projectsData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://divyansh.vercel.app';
+  const baseUrl = 'https://dchandarana07.vercel.app';
 
   const projectSlugs = getAllProjectSlugs();
   const projectUrls = projectSlugs.map((slug) => ({

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://divyansh.vercel.app/sitemap.xml
+Sitemap: https://dchandarana07.vercel.app/sitemap.xml
