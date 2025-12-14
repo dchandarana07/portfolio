@@ -13,24 +13,45 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Divyansh | Software Engineer & iOS Developer",
+  title: "Divyansh Chandarana | Software Engineer",
   description:
-    "Personal portfolio of Divyansh - Software Engineer, iOS Developer, and Research Analyst. Building impact-driven solutions.",
+    "Divyansh Chandarana - Software Engineer specializing in Backend/Cloud, Applied AI Systems, and Full-Stack development. Amazon SDE Intern, ASU Research Analyst. Building production systems at scale.",
   keywords: [
+    "Divyansh Chandarana",
     "Software Engineer",
-    "iOS Developer",
+    "Backend Engineer",
+    "Amazon SDE Intern",
+    "ASU",
+    "Arizona State University",
+    "AI Systems",
     "Full Stack Developer",
-    "React",
-    "Next.js",
-    "Swift",
-    "Portfolio",
+    "Python",
+    "Java",
+    "AWS",
   ],
-  authors: [{ name: "Divyansh" }],
+  authors: [{ name: "Divyansh Chandarana" }],
+  creator: "Divyansh Chandarana",
   openGraph: {
-    title: "Divyansh | Software Engineer & iOS Developer",
+    title: "Divyansh Chandarana | Software Engineer",
     description:
-      "Personal portfolio of Divyansh - Software Engineer, iOS Developer, and Research Analyst.",
+      "Software Engineer specializing in Backend/Cloud, Applied AI Systems, and Full-Stack development. Amazon SDE Intern, ASU Research Analyst.",
     type: "website",
+    locale: "en_US",
+    siteName: "Divyansh Chandarana Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Divyansh Chandarana | Software Engineer",
+    description:
+      "Software Engineer specializing in Backend/Cloud, Applied AI Systems, and Full-Stack development.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
