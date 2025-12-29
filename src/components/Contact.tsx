@@ -156,9 +156,7 @@ export function Contact() {
             variants={itemVariants}
             className="text-center text-gray-400 text-sm mt-5"
           >
-            Open to full-time roles starting Summer 2026.
-            <br />
-            Interested in Software Engineering, Backend/Cloud, and Applied AI Systems.
+            Open to full-time software engineering roles, with a focus on backend systems, applied AI, and production tooling..
           </motion.p>
         </motion.div>
       </div>
