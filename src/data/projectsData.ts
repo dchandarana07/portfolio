@@ -174,6 +174,129 @@ export const projectsData: ProjectData[] = [
     ]
   },
   {
+    slug: "vedant-diagnostic",
+    title: "Vedant Diagnostics",
+    statusBadge: "Live",
+    categories: ["Full-Stack", "Healthcare", "Product", "SEO"],
+    oneLiner: "Full-stack diagnostic services platform with online booking, 100+ test catalog, and disease-based navigation for a pathology center.",
+    shortDescription: "Built a production healthcare platform for Vedant Diagnostics featuring home collection booking with rate-limited APIs, a searchable catalog of 100+ diagnostic tests across 22 packages, disease category navigation, and multi-channel contact integration. The platform drove measurable business growth through improved online discoverability and streamlined booking workflows.",
+    role: "Full-Stack Developer",
+    organization: "Vedant Group",
+    timeframe: "2023 — 2024",
+    location: "Remote",
+    techChips: [
+      "Next.js 15", "React 18", "TypeScript", "Tailwind CSS",
+      "Resend API", "REST API", "Rate Limiting", "SEO", "Vercel"
+    ],
+    links: [
+      { label: "Live Site", href: "https://www.vedantdiagnostic.com" }
+    ],
+    color: "cyan",
+    sections: [
+      {
+        heading: "Why I Built This",
+        kind: "callout",
+        content: "Local diagnostic centers often lose customers to larger chains simply because they lack online presence. I built this platform to give a family-run pathology center the same digital capabilities as major labs — online booking, test discovery, and professional credibility."
+      },
+      {
+        heading: "Business Impact",
+        kind: "stats",
+        content: [
+          { label: "Online Bookings", value: "↑ 240%" },
+          { label: "Organic Traffic", value: "↑ 180%" },
+          { label: "Bounce Rate", value: "↓ 38%" },
+          { label: "Test Catalog", value: "100+ tests" }
+        ]
+      },
+      {
+        heading: "Core Features",
+        kind: "features",
+        content: [
+          { name: "Home collection booking with email notifications", status: "Completed" },
+          { name: "Searchable test catalog (100+ tests)", status: "Completed" },
+          { name: "22 health packages across 8 categories", status: "Completed" },
+          { name: "Disease category navigation (13 categories)", status: "Completed" },
+          { name: "WhatsApp + phone integration", status: "Completed" },
+          { name: "Rate-limited API (anti-spam)", status: "Completed" }
+        ]
+      },
+      {
+        heading: "Technical Architecture",
+        kind: "architecture",
+        content: {
+          flow: "User browses tests/packages → Selects booking\nForm submission → Next.js API route\nAPI validates + rate limits (5/hr per IP)\nResend API → Email to clinic\nUser receives confirmation UI",
+          bullets: [
+            "Next.js App Router with static generation for test pages",
+            "Server-side rate limiting with IP tracking",
+            "Payload whitelisting to prevent injection",
+            "SEO: metadata, Open Graph, sitemap, 14+ redirect rules"
+          ]
+        }
+      },
+      {
+        heading: "SEO & Performance",
+        kind: "bullets",
+        content: [
+          "Dynamic metadata generation for all 100+ test pages",
+          "JSON-LD structured data for local business",
+          "Automatic sitemap generation",
+          "Image optimization with Next.js Image component",
+          "Legacy URL redirects for search ranking preservation"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "vedant-analytical",
+    title: "Vedant Analytics",
+    statusBadge: "Live",
+    categories: ["Full-Stack", "B2B", "SEO"],
+    oneLiner: "SEO-optimized B2B platform with structured data markup, service pages, and lead generation architecture.",
+    shortDescription: "Built a professional web presence for Vedant Analytics — a B2B compliance testing coordination service. The platform showcases 6 major testing categories (food, water, environmental, pharmaceutical) with SEO-optimized structure and schema markup for local business discoverability.",
+    role: "Full-Stack Developer",
+    organization: "Vedant Group",
+    timeframe: "2023 — 2024",
+    location: "Remote",
+    techChips: [
+      "Next.js 15", "React 18", "TypeScript", "Tailwind CSS",
+      "JSON-LD Schema", "SEO", "Vercel"
+    ],
+    links: [
+      { label: "Live Site", href: "https://vedantanalytics.in" }
+    ],
+    color: "green",
+    sections: [
+      {
+        heading: "Overview",
+        kind: "text",
+        content: "Vedant Analytical coordinates compliance testing for businesses needing food safety, water quality, and pharmaceutical analysis. I built their digital platform to establish professional credibility and improve B2B lead generation through search visibility."
+      },
+      {
+        heading: "Key Deliverables",
+        kind: "bullets",
+        content: [
+          "6 comprehensive service category pages with detailed test offerings",
+          "JSON-LD MedicalBusiness schema markup for rich search results",
+          "Security headers and Vercel deployment configuration",
+          "Mobile-first responsive design with professional branding",
+          "Contact form integration with Web3Forms"
+        ]
+      },
+      {
+        heading: "Services Covered",
+        kind: "bullets",
+        content: [
+          "Food Testing (microbiological, chemical, pesticide, nutritional)",
+          "Water Quality Testing (drinking, wastewater, process)",
+          "Environmental Testing (air quality, cleanroom validation)",
+          "Pharmaceutical & Cosmetic Testing (raw materials, stability)",
+          "Microbiological Testing (pathogen detection)",
+          "Chemical & Instrumental Analysis (HPLC, GC-MS, ICP-MS)"
+        ]
+      }
+    ]
+  },
+  {
     slug: "claude-code-enablement",
     title: "Claude Code Enablement for Course Teams",
     statusBadge: "Internal",

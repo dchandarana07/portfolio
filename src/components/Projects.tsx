@@ -116,10 +116,10 @@ export function Projects() {
                     layout
                     variants={itemVariants}
                     whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                    className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-200/60 transition-all duration-300"
+                    className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-200/60 transition-all duration-300 flex flex-col h-full"
                   >
                     {/* Project Header with Badge */}
-                    <div className="p-5 pb-0">
+                    <div className="p-5 pb-0 flex-1">
                       {/* Featured Badge */}
                       {project.featured && (
                         <span className={cn(

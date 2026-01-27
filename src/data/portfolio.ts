@@ -141,6 +141,60 @@ export const projects: Project[] = [
     color: "purple",
   },
   {
+    id: "vedant-diagnostic",
+    slug: "vedant-diagnostic",
+    title: "Vedant Diagnostics",
+    subtitle: "Healthcare platform → online booking, test catalog, disease navigation",
+    description: "Full-stack diagnostic services platform with home collection booking, 100+ searchable tests, and disease-based navigation for a pathology center.",
+    longDescription: "Built a production healthcare platform for Vedant Diagnostics featuring home collection booking with rate-limited APIs, a searchable catalog of 100+ diagnostic tests across 22 packages, disease category navigation, and multi-channel contact integration. The platform drove measurable business growth through improved online discoverability and streamlined booking workflows.",
+    problem: "Local diagnostic centers lose customers to larger chains simply because they lack online presence and modern booking capabilities.",
+    solution: "Built a full-featured healthcare platform with online booking, comprehensive test catalog, and SEO optimization to compete with major labs.",
+    engineeringHighlights: [
+      "Home collection booking system with rate-limited API (5 requests/hr per IP)",
+      "Searchable catalog of 100+ tests with dynamic metadata generation",
+      "22 health packages across 8 categories with filtering",
+      "Disease category navigation (13 categories) for symptom-based discovery",
+      "Multi-channel integration: WhatsApp, phone, email via Resend API",
+    ],
+    results: [
+      "240% increase in online bookings",
+      "180% growth in organic traffic",
+      "38% reduction in bounce rate",
+    ],
+    technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "Resend API", "REST API", "SEO", "Vercel"],
+    category: ["Full-Stack", "Healthcare", "Product"],
+    liveUrl: "https://www.vedantdiagnostic.com",
+    featured: true,
+    status: "Live",
+    color: "cyan",
+  },
+  {
+    id: "vedant-analytical",
+    slug: "vedant-analytical",
+    title: "Vedant Analytics",
+    subtitle: "B2B platform → SEO-first architecture, schema markup, lead generation",
+    description: "Built a production B2B platform with JSON-LD schema markup, 6 service pages, and SEO architecture that improved search visibility and lead generation.",
+    longDescription: "Built a professional web presence for Vedant Analytics — a B2B compliance testing coordination service. The platform showcases 6 major testing categories (food, water, environmental, pharmaceutical) with SEO-optimized structure and schema markup for local business discoverability.",
+    problem: "B2B testing services need professional online presence to establish credibility and generate leads from businesses seeking compliance testing.",
+    solution: "Built an SEO-optimized platform with comprehensive service pages and structured data markup for improved search visibility.",
+    engineeringHighlights: [
+      "6 comprehensive service category pages with detailed test offerings",
+      "JSON-LD MedicalBusiness schema markup for rich search results",
+      "Security headers and Vercel deployment configuration",
+      "Mobile-first responsive design with professional branding",
+    ],
+    results: [
+      "Established professional online presence for B2B lead generation",
+      "Improved search visibility with structured data markup",
+    ],
+    technologies: ["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "JSON-LD Schema", "SEO", "Vercel"],
+    category: ["Full-Stack", "B2B"],
+    liveUrl: "https://vedantanalytics.in",
+    featured: false,
+    status: "Live",
+    color: "green",
+  },
+  {
     id: "studyspace-az",
     slug: "studyspace-az",
     title: "StudySpace AZ",
@@ -219,6 +273,24 @@ export const experiences: Experience[] = [
     ],
     technologies: ["Python", "AWS", "Docker", "ETL", "Data Pipelines", "AI Systems", "Accessibility", "Claude Code", "Canvas API"],
   },
+  {
+    id: "vedant-group",
+    role: "Software Developer",
+    company: "Vedant Group",
+    location: "Remote",
+    startDate: "May 2023",
+    endDate: "December 2023",
+    current: false,
+    description: "Led full-stack development and digital strategy for healthcare and B2B testing platforms, architecting solutions that drove significant business growth through strategic UX decisions and targeted marketing integration.",
+    bullets: [
+      "Architected and deployed two production websites (Vedant Diagnostics & Vedant Analytics) serving healthcare and B2B compliance testing markets",
+      "Designed strategic CTA placements and user flows that increased online bookings by 240%",
+      "Implemented SEO optimization and ran targeted ad campaigns, driving 180% growth in organic traffic",
+      "Built rate-limited booking APIs with email integration, reducing manual appointment scheduling overhead",
+      "Established digital presence that enabled the business to compete with larger diagnostic chains",
+    ],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel", "SEO", "Google Ads", "Resend API", "REST APIs"],
+  },
 ];
 
 export interface Skill {
@@ -279,12 +351,16 @@ export const technicalSkills = {
     "AWS (EC2, Lambda, S3, CloudWatch)", "Docker", "GitHub Actions",
     "Linux/Unix on x86", "Git", "CI/CD Pipelines"
   ],
+  "Full Stack Development": [
+    "Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js",
+    "REST APIs", "Vercel", "Git", "Responsive Design", "SEO Optimization"
+  ],
   "Engineering Fundamentals": [
     "Backend Development", "Distributed Systems", "REST API Design",
     "Data Pipelines", "Observability & Monitoring", "Scalability",
     "Reliability", "Testing", "SDLC"
   ],
-  "Applied AI Systems": [
+  "AI Systems": [
     "ASR Pipelines", "Transcription Evaluation (WER/CER)", "Task Queues",
     "Prompt-Driven Automation", "Accessibility-First Formatting"
   ],
@@ -292,12 +368,12 @@ export const technicalSkills = {
 
 // Radar chart categories for skill visualization
 export const radarCategories = [
+  { name: "AI", value: 90 },
   { name: "Backend", value: 92 },
-  { name: "Cloud/AWS", value: 88 },
-  { name: "Applied AI", value: 85 },
-  { name: "Full-Stack", value: 80 },
-  { name: "Data/ETL", value: 82 },
-  { name: "iOS/Mobile", value: 70 },
+  { name: "Full-Stack", value: 88 },
+  { name: "Cloud/AWS", value: 85 },
+  { name: "Software Eng", value: 89 },
+  { name: "iOS/Mobile", value: 75 },
 ];
 
 export const navLinks = [

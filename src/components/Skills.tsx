@@ -11,11 +11,11 @@ import { Hexagon, BarChart3 } from "lucide-react";
 // Bar chart data - reflecting skill depth (number of technologies/areas of expertise)
 const barChartData = [
   { name: "Backend &\nCloud", value: 12, color: "#06b6d4" },
-  { name: "Applied AI\nSystems", value: 10, color: "#8b5cf6" },
-  { name: "Full-Stack", value: 9, color: "#3b82f6" },
-  { name: "Data &\nPipelines", value: 8, color: "#ec4899" },
+  { name: "AI\nSystems", value: 11, color: "#8b5cf6" },
+  { name: "Full-Stack", value: 10, color: "#3b82f6" },
+  { name: "Software\nEng", value: 9, color: "#ec4899" },
   { name: "DevOps &\nInfra", value: 7, color: "#f97316" },
-  { name: "Mobile/iOS", value: 5, color: "#10b981" },
+  { name: "Mobile/iOS", value: 6, color: "#10b981" },
 ];
 
 export function Skills() {
