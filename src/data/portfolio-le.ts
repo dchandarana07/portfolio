@@ -46,8 +46,8 @@ export const projectsLE: LEProject[] = [
   {
     id: "ai-grader",
     title: "AI Grader",
-    description: "Support tooling for grading operations, contributing to internal scale and workflow efficiency.",
-    technologies: ["Python", "Automation", "Applied AI", "Workflow Enablement"],
+    description: "Production grading management platform integrating Canvas and HubSpot with LLM-orchestrated pipelines, supporting grading operations at scale. Contributed to system maintenance and ongoing feature development—including exploring and extending AI feedback capabilities within the grading platform.",
+    technologies: ["Python", "Canvas API", "HubSpot", "LLM Pipelines", "Applied AI"],
     color: "orange",
   },
 ];
@@ -79,6 +79,9 @@ export const experiencesLE: LEExperience[] = [
       "Owned ASR evaluation and benchmarking work in Python, calculating WER/CER and comparing transcription quality against existing ASU systems to inform accuracy, reliability, and rollout decisions",
       "Supported applied AI adoption across teams by leading Claude Code enablement sessions, including onboarding, troubleshooting, and workflow integration",
       "Collaborated closely with Learning Innovations and cross-functional stakeholders to ensure systems were reliable, measurable, and production-ready",
+      "Maintained and extended a production AI grading platform, contributing to system reliability, debugging, and ongoing feature development",
+      "Exploring and extending AI feedback capabilities within the grading platform",
+      "Presented AI Transcript benchmarking work at FOLCfest 2026, an ASU Provost's Office initiative showcasing innovation in learning technology",
     ],
     technologies: [],
   },
@@ -142,7 +145,7 @@ export const skillsLE = {
     },
     {
       title: "Applied AI Systems",
-      details: "Speech-to-text pipelines (ASR), WER/CER evaluation, task queues, prompt-driven automation, accessibility-first AI outputs, model quality validation",
+      details: "Speech-to-text pipelines (ASR), WER/CER evaluation, task queues, prompt-driven automation, accessibility-first AI outputs, model quality validation, LLM pipeline development, production AI system maintenance, AI feedback systems",
     },
     {
       title: "Data Analysis & Research",

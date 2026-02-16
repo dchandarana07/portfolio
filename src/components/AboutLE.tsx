@@ -100,7 +100,7 @@ export function AboutLE() {
               <h3 className="text-lg font-semibold text-gray-900">Looking Ahead</h3>
             </div>
             <p className="text-gray-500 leading-relaxed text-[15px]">
-              I’m interested in continuing to push applied AI systems further inside Learning Enterprise. One area of focus is bringing speech-to-text capabilities in-house, building on early work with local ASR infrastructure within AI Labs @ Learning Enterprise (e.g., Whisper on Apple silicon). Over time, this could enable more efficient, cost-effective transcription and support broader accessibility across ASU lecture content—grounded in careful evaluation and responsible rollout.
+              My focus is on pushing production AI systems further inside Learning Enterprise—building on ongoing work to extend AI capabilities within the grading platform, with a goal of reliable, evaluatable automated feedback that teams can confidently deploy at scale. Beyond LE, I'm drawn to applied AI engineering roles where the work ships to real users, demands careful evaluation, and has direct operational impact.
             </p>
           </motion.div>
         </motion.div>

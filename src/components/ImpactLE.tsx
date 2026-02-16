@@ -21,8 +21,8 @@ const impactCards = [
     iconColor: "text-blue-600",
   },
   {
-    title: "Operational efficiency through automation",
-    body: "Built and shipped automation tools—including comprehensive market research pipelines—that reduce hours of manual work and improve internal visibility for Learning Enterprise teams.",
+    title: "Process Automation & Operational Efficiency",
+    body: "Built and shipped automation tools—including comprehensive market research pipelines—that reduce hours of manual work and improve internal visibility for Learning Enterprise teams. Currently working on AI-assisted QA automation to streamline quality assurance workflows.",
     icon: Workflow,
     bgGradient: "from-purple-50 to-pink-50",
     iconColor: "text-purple-600",
